@@ -1,0 +1,107 @@
+.home-primary-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://images.pexels.com/photos/870802/pexels-photo-870802.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+
+}
+.content-box{
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    width: 50%;
+    min-height: 500px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.search-container{
+    padding: 10px;
+}
+.search-input{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+.search-button{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.weather-card{
+    color: white;
+}
+p{
+    display: flex;
+}
+span{
+    /* color: black; */
+    width: 200px;
+    margin-left: 10px;
+}
+.icon{
+    margin-right: 6px;
+}
+.weather-output{
+    font-weight: 600;
+}
+.sunrise{
+    color: #E67451;
+}
+.sunset{
+    color: #FAD6A5;
+}
+.temp{
+    color: red;
+}
+.clouds{
+    color: #c7c4bf;
+}
+.humidity,.wind{
+    color: blue;
+}
+
+
+.light{
+    color: white;
+}
+.dark{
+    color: black;
+    background-color: transparent;
+}
+.weather-card{
+    border-radius: 10px;
+    background-color: transparent;
+}
+.content-name {
+    border-radius: 10px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .content-box{
+        width: 90%;
+    }
+    .search-button{
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .home-primary-container{
+        width: 1100px;
+        min-height: 300vh;
+    }
+    .content-box{
+        width: 90%;
+        padding-bottom: 30px;
+    }
+    .search-button{
+        margin-top: 10px;
+    }
+}
